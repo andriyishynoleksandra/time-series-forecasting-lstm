@@ -1,57 +1,61 @@
 # Time Series Forecasting with LSTM
 
-## 📌 Project Overview
-This project demonstrates an end-to-end approach to time series forecasting
-using a Long Short-Term Memory (LSTM) neural network.
-The goal is to predict future values based on historical time-dependent data
-and explore the applicability of deep learning models for sequential data.
+# Прогнозування часових рядів за допомогою LSTM
 
-## 🎯 Problem Statement
-Accurate forecasting of time series data is a common challenge in analytics and
-decision-making. This project aims to build and evaluate an LSTM-based model
-capable of capturing temporal dependencies and trends in sequential data.
+## 📌 Опис проєкту
+Проєкт демонструє повний цикл прогнозування часових рядів із використанням
+нейронної мережі Long Short-Term Memory (LSTM).
+Метою є передбачення майбутніх значень на основі історичних даних
+та аналіз можливостей глибинного навчання для роботи з послідовними даними.
 
-## 📊 Dataset
-The dataset represents a univariate time series.
-Key steps include:
-- data normalization
-- sequence generation
-- train/test split preserving temporal order
+## 🎯 Постановка задачі
+Прогнозування часових рядів є поширеною аналітичною задачею у фінансах,
+економіці, попиті на продукти та операційному плануванні.
+Завданням проєкту є побудова та оцінка LSTM-моделі,
+здатної виявляти часові залежності та тренди у даних.
 
-## 🧠 Approach
-The project follows a structured ML workflow:
-1. Data preprocessing and scaling
-2. Transforming time series into supervised learning sequences
-3. Building an LSTM neural network
-4. Training and validating the model
-5. Generating predictions and evaluating performance
+## 📊 Дані
+Використовується одновимірний часовий ряд.
+У межах підготовки даних виконано:
+- нормалізацію значень
+- формування послідовностей для навчання моделі
+- розділення даних на тренувальну та тестову вибірки
+  з урахуванням часової структури
 
-## 🤖 Model
-- LSTM (Long Short-Term Memory)
-- Loss function: Mean Squared Error (MSE)
-- Optimizer: Adam
+## 🧠 Підхід до розвʼязання
+Проєкт побудований за стандартним ML-пайплайном:
+1. Попередня обробка та масштабування даних
+2. Перетворення часових рядів у формат задачі навчання з учителем
+3. Побудова LSTM-архітектури
+4. Навчання та валідація моделі
+5. Генерація прогнозів та аналіз результатів
 
-## 📈 Results
-The trained LSTM model successfully learns temporal patterns in the data and
-produces reasonable forecasts.
-Results are visualized to compare predicted and actual values.
+## 🤖 Модель
+- Тип моделі: Long Short-Term Memory (LSTM)
+- Функція втрат: Mean Squared Error (MSE)
+- Оптимізатор: Adam
 
-## 🔍 Conclusions
-- LSTM effectively captures temporal dependencies in time series data.
-- Proper data scaling and sequence preparation are critical for model performance.
-- The approach can be extended to multivariate time series and longer forecasting horizons.
+## 📈 Результати
+Навчена LSTM-модель змогла захопити часові залежності у даних
+та сформувати коректні прогнози.
+Результати візуалізовано шляхом порівняння фактичних
+та передбачених значень.
 
-## 🚀 Possible Improvements
-- Hyperparameter tuning
-- Multivariate time series forecasting
-- Comparison with classical models (ARIMA, Prophet)
-- Model performance evaluation on different horizons
+## 🔍 Висновки
+- LSTM є ефективним підходом для прогнозування часових рядів
+- Якість прогнозу значною мірою залежить від масштабування даних
+  та правильної підготовки послідовностей
+- Підхід можна масштабувати для складніших та багатовимірних рядів
 
-## 🛠 Tech Stack
+## 🚀 Можливі покращення
+- Підбір гіперпараметрів моделі
+- Розширення на багатовимірні часові ряди
+- Порівняння з класичними моделями (ARIMA, Prophet)
+- Аналіз прогнозів на різних горизонтах
+
+## 🛠 Технології
 - Python
 - pandas, numpy
 - scikit-learn
 - TensorFlow / Keras
 - Matplotlib
-
-## 📎 Repository Structure
